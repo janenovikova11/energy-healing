@@ -1,7 +1,7 @@
 // ─── SEO: meta tags, hreflang, Open Graph, JSON-LD schema ───
-// Replace YOURDOMAIN.COM with the real domain before deploying.
+// Replace janenovikova.com with the real domain before deploying.
 (function () {
-  var SITE = 'https://YOURDOMAIN.COM';
+  var SITE = 'https://janenovikova.com';
   var AUTHOR = 'Jane Novikova';
 
   // ── Per-page metadata (title + description in EN / ES / RU) ──

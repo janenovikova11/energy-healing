@@ -8,4 +8,4 @@ Allow: /ru/
 # Legacy paths — kept for backwards compatibility, not for indexing
 Disallow: /pages/
 
-Sitemap: https://YOURDOMAIN.COM/sitemap.xml
+Sitemap: https://janenovikova.com/sitemap.xml
