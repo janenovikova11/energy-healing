@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Language mirrors — all are valid, hreflang declared in each page
+Allow: /es/
+Allow: /ru/
+
+# Legacy paths — kept for backwards compatibility, not for indexing
+Disallow: /pages/
+
+Sitemap: https://YOURDOMAIN.COM/sitemap.xml

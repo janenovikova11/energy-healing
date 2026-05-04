@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition | Energy Healing Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* ─── Recipe cards (using <details>) ───────────── */
+    .recipes-toc {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+    .recipes-toc h3 {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      color: var(--teal);
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+    .recipes-toc ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 6px 20px; }
+    .recipes-toc li { font-size: 0.88rem; }
+    .recipes-toc li a { color: var(--teal); }
+    .recipes-toc li a:hover { color: var(--gold); }
+
+    .recipe-cat {
+      margin-bottom: 48px;
+      scroll-margin-top: 90px;
+    }
+    .recipe-cat-head {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .recipe-cat-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+    }
+
+    .recipe {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .recipe[open] { border-color: rgba(29,140,118,0.3); }
+    .recipe summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--white);
+      transition: background 0.18s;
+    }
+    .recipe summary::-webkit-details-marker { display: none; }
+    .recipe summary:hover { background: #f9f7f4; }
+    .recipe summary .icon {
+      color: var(--teal);
+      font-size: 1.2rem;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+    }
+    .recipe[open] summary .icon { transform: rotate(45deg); }
+
+    .recipe-body {
+      padding: 4px 24px 22px;
+      background: #fbfaf6;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .recipe-body p { margin: 12px 0; }
+    .recipe-body strong { color: var(--white); font-weight: 600; }
+    .recipe-body ul, .recipe-body ol {
+      list-style: revert;
+      margin: 8px 0 12px 22px;
+    }
+    .recipe-body ul li, .recipe-body ol li { margin-bottom: 4px; padding-left: 4px; }
+    .recipe-body .meta {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: rgba(29,140,118,0.07);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin: 6px 0 14px;
+    }
+    .recipe-body .warn {
+      background: rgba(176,106,26,0.08);
+      border-left: 3px solid var(--gold);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin: 12px 0;
+    }
+    .recipe-body .tip {
+      background: rgba(107,79,168,0.07);
+      border-left: 3px solid var(--purple);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="container">
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="practices.html">Practices</a> → Nutrition</div>
+    <h1>Nutrition</h1>
+    <p>Food is part of what we are. The energy you have for healing, manifestation, and daily life starts on your plate.</p>
+  </div>
+
+  <!-- ─── Why nutrition matters ───────────────────────── -->
+  <h2 class="section-title mb-8">Why Nutrition Matters for Healing</h2>
+  <p class="text-muted mb-24" style="max-width:760px;">Healing and manifestation both require <strong style="color:var(--white);">energy</strong>. If you are running on empty — under-nourished, inflamed, depleted — you simply do not have the fuel to do the inner work. You can read every protocol on this site and still feel stuck, because the body needs raw material to hold a high-frequency state.</p>
+
+  <div class="highlight-box mb-40" style="border-color:rgba(29,140,118,0.25);">
+    <h3 style="font-family:var(--font-head); color:var(--teal); margin-bottom:12px;">A useful analogy: AI and energy</h3>
+    <p class="text-muted">Modern AI systems consume tremendous amounts of energy. The more complex the request, the more compute it takes — and the longer it runs. Healing and manifestation work the same way. A small intention is cheap; clearing deep trauma, dissolving an old contract, or holding a sustained high-frequency state is computationally expensive for your system. If your body is undernourished, it cannot run the heavy processes. Feeding yourself well is not a side topic — it is the power supply.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ─── My nutrition principles ─────────────────────── -->
+  <h2 class="section-title mb-8">The Path of Least Harm</h2>
+  <p class="text-muted mb-24" style="max-width:760px;">Over many years I have put together my own set of nutrition rules. They are balanced — not extreme, not dogmatic — and they follow a single principle: the <strong style="color:var(--white);">path of least harm</strong>. Nothing we eat or drink today is 100% perfect, so the goal is not perfection. The goal is to consistently choose the cleaner option whenever you can.</p>
+
+  <div class="grid-2 mb-40">
+    <div class="card">
+      <div class="card-icon">🌿</div>
+      <h3>Read the ingredients</h3>
+      <p>If a label contains words I do not understand, I do not buy it. This single filter removes most of the worst offenders without needing any other rule.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🥬</div>
+      <h3>Vegetables and berries first</h3>
+      <p>Organic vegetables and berries are the base of almost every meal. Less fruit overall — fruit has real sugar — and far more leafy greens, roots, and seasonal vegetables.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🐟</div>
+      <h3>Animal protein with a clean origin</h3>
+      <p>Meat and fish where I can trace the origin and where parasites, antibiotics, and added hormones are minimized. Quality matters more than quantity.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚖️</div>
+      <h3>Balanced calories, real energy</h3>
+      <p>Enough fat, enough protein, enough slow carbs to sustain energy through the day. Eating "clean" and being undernourished is a common trap — these recipes are designed to avoid it.</p>
+    </div>
+  </div>
+
+  <div class="notice notice-warning mb-40">
+    <strong>What I exclude:</strong> gluten, refined sugar, processed foods, and lactose. The recipes below are all built around this and still taste like real, satisfying food.
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ─── Recipes section ─────────────────────────────── -->
+  <div style="margin-bottom:18px;">
+    <span class="section-tag">From My Kitchen</span>
+    <h2 class="section-title" style="margin-bottom:6px;">Recipes</h2>
+  </div>
+  <p class="text-muted mb-32" style="max-width:760px;">Click any recipe to expand. Use the language switcher in the navigation to read the recipes in English, Spanish, or Russian.</p>
+
+  <!-- Table of contents -->
+  <div class="recipes-toc">
+    <h3>
+      <span data-lang="en">Contents</span>
+      <span data-lang="es">Contenido</span>
+      <span data-lang="ru">Содержание</span>
+    </h3>
+    <ul>
+      <li><a href="#cat-basics"><span data-lang="en">Basic Preparations</span><span data-lang="es">Preparaciones básicas</span><span data-lang="ru">Базовые заготовки</span></a></li>
+      <li><a href="#cat-breakfasts"><span data-lang="en">Breakfasts</span><span data-lang="es">Desayunos</span><span data-lang="ru">Завтраки</span></a></li>
+      <li><a href="#cat-sauces"><span data-lang="en">Sauces &amp; Extras</span><span data-lang="es">Salsas y complementos</span><span data-lang="ru">Соусы и добавки</span></a></li>
+      <li><a href="#cat-lunch"><span data-lang="en">Lunch &amp; Light Dishes</span><span data-lang="es">Almuerzo y platos ligeros</span><span data-lang="ru">Ланч и лёгкие блюда</span></a></li>
+      <li><a href="#cat-sides"><span data-lang="en">Side Dishes</span><span data-lang="es">Guarniciones</span><span data-lang="ru">Гарниры</span></a></li>
+      <li><a href="#cat-mains"><span data-lang="en">Main Courses</span><span data-lang="es">Platos principales</span><span data-lang="ru">Основные блюда</span></a></li>
+    </ul>
+  </div>
+
+  <!-- ─── Category: Basics ─────────────────────────── -->
+  <section class="recipe-cat" id="cat-basics">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Basic Preparations</span>
+      <span data-lang="es">Preparaciones básicas</span>
+      <span data-lang="ru">Базовые заготовки</span>
+    </h2>
+    <p class="recipe-cat-desc">
+      <span data-lang="en">These items are convenient to prepare in advance and use across many dishes.</span>
+      <span data-lang="es">Estos productos son convenientes para preparar con antelación y usar en varios platos.</span>
+      <span data-lang="ru">Эти продукты удобно приготовить заранее и использовать в разных блюдах.</span>
+    </p>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">How to Roast Pumpkin</span>
+          <span data-lang="es">Cómo asar calabaza</span>
+          <span data-lang="ru">Как запечь тыкву</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>Butternut squash works best for this recipe.</p>
+          <ol>
+            <li>Wash the pumpkin.</li>
+            <li>Place it whole on a baking sheet.</li>
+            <li>Bake at 180°C for about 2 hours.</li>
+          </ol>
+          <p>After baking, the flesh becomes soft and sweet. Store in the fridge and use across various breakfasts.</p>
+        </div>
+        <div data-lang="es">
+          <p>La calabaza butternut es la mejor para esta receta.</p>
+          <ol>
+            <li>Lavar la calabaza.</li>
+            <li>Colocarla entera en una bandeja de horno.</li>
+            <li>Hornear a 180°C durante unas 2 horas.</li>
+          </ol>
+          <p>Después del horneado, la pulpa queda suave y dulce. Se puede guardar en la nevera y usar en varios desayunos.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Для этого рецепта лучше всего подходит тыква сорта баттернат (удлинённая).</p>
+          <ol>
+            <li>Тыкву помыть.</li>
+            <li>Положить целиком на противень.</li>
+            <li>Запекать в духовке при 180°C около 2 часов.</li>
+          </ol>
+          <p>После запекания мякоть становится мягкой и сладкой. Её можно хранить в холодильнике и использовать в разных завтраках.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">How to Cook Quinoa</span>
+          <span data-lang="es">Cómo cocinar quinoa</span>
+          <span data-lang="ru">Как приготовить киноа</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>Quinoa can be prepared in advance and stored in the fridge. Usually cooked in a multicooker like rice.</p>
+          <div class="warn">⚠ Instead of water, use bone broth from beef bones.</div>
+          <p>You can buy ready-made broth, but check the ingredients — ideally it should contain only bones and vegetables.</p>
+        </div>
+        <div data-lang="es">
+          <p>La quinoa se puede preparar con antelación y guardar en la nevera. Normalmente se cocina en una olla programable como el arroz.</p>
+          <div class="warn">⚠ En lugar de agua, es mejor usar caldo de huesos de res.</div>
+          <p>Se puede comprar caldo hecho, pero revisa los ingredientes — idealmente solo huesos y verduras.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Киноа можно приготовить заранее и хранить в холодильнике. Обычно её готовят в мультиварке, как рис.</p>
+          <div class="warn">⚠ Вместо воды лучше использовать костный бульон из говяжьих костей.</div>
+          <p>Бульон можно купить готовый, но важно смотреть состав — в идеале там должны быть только кости и овощи.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Bone Broth</span>
+          <span data-lang="es">Caldo de huesos</span>
+          <span data-lang="ru">Костный бульон</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>Beef bone broth is an excellent base for cooking quinoa and soups. You can buy it ready-made, but check the ingredients — ideally just bones and vegetables.</p>
+        </div>
+        <div data-lang="es">
+          <p>El caldo de huesos de res es una excelente base para cocinar quinoa y sopas. Se puede comprar hecho, pero revisa los ingredientes — idealmente solo huesos y verduras.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Костный бульон из говяжьих костей — отличная основа для приготовления киноа и супов. Можно купить готовый, но важно смотреть состав — в идеале только кости и овощи.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─── Category: Breakfasts ─────────────────────── -->
+  <section class="recipe-cat" id="cat-breakfasts">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Breakfasts</span>
+      <span data-lang="es">Desayunos</span>
+      <span data-lang="ru">Завтраки</span>
+    </h2>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Healthy Green Buckwheat Waffles or Pancakes</span>
+          <span data-lang="es">Gofres o tortitas saludables de trigo sarraceno verde</span>
+          <span data-lang="ru">Полезные вафли или оладьи из зелёной гречки</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A simple, healthy breakfast — make it in a waffle iron or as pancakes on a skillet.</p>
+          <span class="meta">Servings: 1–2 · Time: ~15 min</span>
+          <p><strong>Basic ingredients:</strong></p>
+          <ul>
+            <li>3 tbsp coconut yogurt, or 3–4 tbsp coconut/almond milk</li>
+            <li>1 egg</li>
+            <li>2–3 tbsp filling of choice</li>
+            <li>Up to 1 tbsp oat flakes (optional)</li>
+            <li>Green buckwheat flour — to thick sour cream consistency</li>
+            <li>Coconut oil or ghee</li>
+          </ul>
+          <p><strong>Filling options:</strong></p>
+          <ol>
+            <li>Spinach + zucchini (savory)</li>
+            <li>Beet (roasted)</li>
+            <li>Apple (peeled, diced)</li>
+            <li>Pumpkin (roasted)</li>
+          </ol>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Blend yogurt/milk, egg, filling, and oats.</li>
+            <li>Add flour until you reach a thick sour cream consistency.</li>
+            <li>Cook in the waffle iron or in a skillet with coconut oil/ghee.</li>
+          </ol>
+          <p><strong>Serving:</strong> Savory — with eggs, green salad, avocado. Sweet — with nut butter, berries, coconut yogurt, granola.</p>
+        </div>
+        <div data-lang="es">
+          <p>Un desayuno sencillo y saludable que se puede hacer en gofrera o como tortitas en sartén.</p>
+          <span class="meta">Porciones: 1–2 · Tiempo: ~15 minutos</span>
+          <p><strong>Ingredientes básicos:</strong></p>
+          <ul>
+            <li>3 cdas de yogur de coco o 3–4 cdas de leche de coco/almendra</li>
+            <li>1 huevo</li>
+            <li>2–3 cdas del relleno elegido</li>
+            <li>Hasta 1 cda de copos de avena (opcional)</li>
+            <li>Harina de trigo sarraceno verde — hasta consistencia de crema espesa</li>
+            <li>Aceite de coco o ghee</li>
+          </ul>
+          <p><strong>Opciones de relleno:</strong></p>
+          <ol>
+            <li>Espinacas + calabacín (salado)</li>
+            <li>Remolacha (asada)</li>
+            <li>Manzana (pelada, en cubos)</li>
+            <li>Calabaza (asada)</li>
+          </ol>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Batir en licuadora yogur/leche, huevo, relleno, avena.</li>
+            <li>Añadir harina hasta consistencia de crema espesa.</li>
+            <li>Cocinar en gofrera o sartén con aceite de coco/ghee.</li>
+          </ol>
+          <p><strong>Servir:</strong> Salado — con huevos, ensalada verde, aguacate. Dulce — con mantequilla de frutos secos, bayas, yogur de coco, granola.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Простой и полезный завтрак, который можно приготовить в вафельнице или на сковороде как оладьи.</p>
+          <span class="meta">Порции: 1–2 · Время: ~15 минут</span>
+          <p><strong>Базовые ингредиенты:</strong></p>
+          <ul>
+            <li>3 ст. л. кокосового йогурта или 3–4 ст. л. кокосового/миндального молока</li>
+            <li>1 яйцо</li>
+            <li>2–3 ст. л. выбранной начинки</li>
+            <li>до 1 ст. л. овсяных хлопьев (по желанию)</li>
+            <li>мука из зелёной гречки — до консистенции густой сметаны</li>
+            <li>кокосовое масло или масло гхи</li>
+          </ul>
+          <p><strong>Варианты начинки:</strong></p>
+          <ol>
+            <li>Шпинат + цукини (несладкие)</li>
+            <li>Свёкла (запечённая)</li>
+            <li>Яблоко (очищенное, кубиками)</li>
+            <li>Тыква (запечённая)</li>
+          </ol>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Взбить в блендере йогурт/молоко, яйцо, начинку, хлопья.</li>
+            <li>Добавить муку до густой сметаны.</li>
+            <li>Готовить в вафельнице или на сковороде на кокосовом масле/гхи.</li>
+          </ol>
+          <p><strong>Подача:</strong> Несладкие — с яйцами, зелёным салатом, авокадо. Сладкие — с ореховой пастой, ягодами, кокосовым йогуртом, гранолой.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Homemade Granola with Nuts and Cocoa</span>
+          <span data-lang="es">Granola casera con frutos secos y cacao</span>
+          <span data-lang="ru">Домашняя гранола с орехами и какао</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>Crunchy sugar-free granola with the cleanest possible ingredients.</p>
+          <span class="meta">Time: ~30–40 min · Storage: up to 2 weeks</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Whole oat flakes</li>
+            <li>Mixed nuts (hazelnuts, walnuts, almonds)</li>
+            <li>Pumpkin seeds</li>
+            <li>Coconut oil</li>
+            <li>Cocoa powder</li>
+            <li>Roasted pumpkin or ripe banana</li>
+            <li>Pinch of salt</li>
+            <li>Optional: unsweetened coconut flakes, hemp hearts</li>
+          </ul>
+          <div class="warn">⚠ Avoid cashews — they are legumes, not nuts.</div>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Mix oats, nuts, and seeds.</li>
+            <li>Blend coconut oil, cocoa, and pumpkin/banana.</li>
+            <li>Combine and spread on a baking sheet.</li>
+            <li>Bake at 180°C: 15–20 min, stir, then 10–15 min more.</li>
+            <li>Add coconut flakes and hemp hearts after the oven.</li>
+            <li>Store in a glass jar.</li>
+          </ol>
+          <p><strong>Serving:</strong> with coconut yogurt and berries.</p>
+        </div>
+        <div data-lang="es">
+          <p>Granola crujiente sin azúcar con ingredientes limpios.</p>
+          <span class="meta">Tiempo: ~30–40 min · Conservación: hasta 2 semanas</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Copos de avena integrales</li>
+            <li>Mezcla de frutos secos (avellanas, nueces, almendras)</li>
+            <li>Semillas de calabaza</li>
+            <li>Aceite de coco</li>
+            <li>Cacao en polvo</li>
+            <li>Calabaza asada o plátano maduro</li>
+            <li>Pizca de sal</li>
+            <li>Opcional: coco rallado sin azúcar, semillas de cáñamo</li>
+          </ul>
+          <div class="warn">⚠ Evitar los anacardos — son legumbres, no frutos secos.</div>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Mezclar avena, frutos secos y semillas.</li>
+            <li>Batir aceite de coco, cacao y calabaza/plátano.</li>
+            <li>Combinar y extender en una bandeja de horno.</li>
+            <li>Hornear a 180°C: 15–20 min, remover, luego 10–15 min más.</li>
+            <li>Añadir coco rallado y semillas de cáñamo después del horno.</li>
+            <li>Guardar en tarro de cristal.</li>
+          </ol>
+          <p><strong>Servir:</strong> con yogur de coco y bayas.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Хрустящая гранола без сахара с максимально чистыми ингредиентами.</p>
+          <span class="meta">Время: ~30–40 минут · Хранение: до 2 недель</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>цельные овсяные хлопья</li>
+            <li>смесь орехов (фундук, грецкий, миндаль)</li>
+            <li>тыквенные семечки</li>
+            <li>кокосовое масло</li>
+            <li>какао-порошок</li>
+            <li>запечённая тыква или спелый банан</li>
+            <li>щепотка соли</li>
+            <li>по желанию: кокосовая стружка, ядра конопли</li>
+          </ul>
+          <div class="warn">⚠ Кешью лучше не использовать — это не орех, а бобовое.</div>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Смешать хлопья, орехи и семечки.</li>
+            <li>В блендере взбить кокосовое масло, какао и тыкву/банан.</li>
+            <li>Соединить и распределить на противне.</li>
+            <li>Запекать при 180°C: 15–20 мин, перемешать, ещё 10–15 мин.</li>
+            <li>Добавить кокосовую стружку и ядра конопли после духовки.</li>
+            <li>Хранить в стеклянной банке.</li>
+          </ol>
+          <p><strong>Подача:</strong> с кокосовым йогуртом и ягодами.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Warm Quinoa Bowl with Vegetables and Poached Egg</span>
+          <span data-lang="es">Bowl caliente de quinoa con verduras y huevo escalfado</span>
+          <span data-lang="ru">Тёплый боул с киноа, овощами и яйцом пашот</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A very hearty, savory breakfast.</p>
+          <span class="meta">Time: ~10 min (if quinoa is ready)</span>
+          <p><strong>Base:</strong></p>
+          <ul>
+            <li>3–4 tbsp cooked quinoa</li>
+            <li>2–3 tbsp roasted pumpkin</li>
+            <li>Ghee for reheating</li>
+          </ul>
+          <p><strong>Vegetables &amp; greens:</strong></p>
+          <ul><li>Spinach, arugula, cucumber, radish, carrot, tomatoes</li></ul>
+          <p><strong>Extras:</strong></p>
+          <ul><li>Sauerkraut, seeds, nuts, goat cheese, olive oil, hummus</li></ul>
+          <p><strong>Poached egg:</strong></p>
+          <ol>
+            <li>Crack 2 eggs into a cup.</li>
+            <li>Bring water to a bare simmer.</li>
+            <li>Add a splash of vinegar, create a vortex.</li>
+            <li>Gently pour the eggs in, cook ~4 min.</li>
+          </ol>
+          <p><strong>Final touches:</strong> olive oil, goat cheese, balsamic glaze (sugar-free).</p>
+        </div>
+        <div data-lang="es">
+          <p>Un desayuno salado muy completo y saludable.</p>
+          <span class="meta">Tiempo: ~10 min (si la quinoa está lista)</span>
+          <p><strong>Base:</strong></p>
+          <ul>
+            <li>3–4 cdas de quinoa cocida</li>
+            <li>2–3 cdas de calabaza asada</li>
+            <li>Ghee para recalentar</li>
+          </ul>
+          <p><strong>Verduras y hojas verdes:</strong></p>
+          <ul><li>Espinacas, rúcula, pepino, rábano, zanahoria, tomates</li></ul>
+          <p><strong>Extras:</strong></p>
+          <ul><li>Chucrut, semillas, frutos secos, queso de cabra, aceite de oliva, hummus</li></ul>
+          <p><strong>Huevo escalfado:</strong></p>
+          <ol>
+            <li>Cascar 2 huevos en un vaso.</li>
+            <li>Agua apenas hirviendo.</li>
+            <li>Añadir vinagre, crear un remolino.</li>
+            <li>Verter los huevos con cuidado, cocinar ~4 min.</li>
+          </ol>
+          <p><strong>Toques finales:</strong> aceite de oliva, queso de cabra, crema balsámica (sin azúcar).</p>
+        </div>
+        <div data-lang="ru">
+          <p>Очень сытный и полезный солёный завтрак.</p>
+          <span class="meta">Время: ~10 минут (если киноа уже готова)</span>
+          <p><strong>Основа:</strong></p>
+          <ul>
+            <li>3–4 ст. л. готовой киноа</li>
+            <li>2–3 ст. л. запечённой тыквы</li>
+            <li>масло гхи для разогрева</li>
+          </ul>
+          <p><strong>Овощи и зелень:</strong></p>
+          <ul><li>шпинат, рукола, огурец, редис, морковь, помидоры</li></ul>
+          <p><strong>Дополнительно:</strong></p>
+          <ul><li>квашеная капуста, семечки, орехи, козий сыр, оливковое масло, хумус</li></ul>
+          <p><strong>Яйцо пашот:</strong></p>
+          <ol>
+            <li>Разбить 2 яйца в стакан.</li>
+            <li>Вода — почти не кипит.</li>
+            <li>Добавить уксус, сделать воронку.</li>
+            <li>Аккуратно вылить яйца, готовить ~4 мин.</li>
+          </ol>
+          <p><strong>Финальные штрихи:</strong> оливковое масло, козий сыр, бальзамический крем (без сахара).</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Shakshuka</span>
+          <span data-lang="es">Shakshuka</span>
+          <span data-lang="ru">Шакшука</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A warm breakfast of stewed vegetables, spices, and eggs.</p>
+          <span class="meta">Time: ~15–20 min</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>2–3 eggs</li>
+            <li>1 tomato</li>
+            <li>½ red bell pepper</li>
+            <li>1–2 garlic cloves</li>
+            <li>Cooking oil</li>
+            <li>Salt, black pepper, cumin, paprika, cayenne</li>
+            <li>Fresh herbs, goat cheese (optional)</li>
+          </ul>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Heat the spices in a skillet with oil.</li>
+            <li>Add the pepper and sauté. Add the tomato and simmer until saucy.</li>
+            <li>Make wells, crack the eggs in, cook on low heat.</li>
+            <li>Garnish with herbs and goat cheese.</li>
+          </ol>
+          <p><strong>Serving:</strong> with sourdough bread (no yeast, no sugar).</p>
+        </div>
+        <div data-lang="es">
+          <p>Un desayuno caliente de verduras guisadas con especias y huevos.</p>
+          <span class="meta">Tiempo: ~15–20 min</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>2–3 huevos</li>
+            <li>1 tomate</li>
+            <li>½ pimiento rojo</li>
+            <li>1–2 dientes de ajo</li>
+            <li>Aceite para cocinar</li>
+            <li>Sal, pimienta negra, comino, pimentón, cayena</li>
+            <li>Hierbas frescas, queso de cabra (opcional)</li>
+          </ul>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Calentar las especias en sartén con aceite.</li>
+            <li>Añadir el pimiento y saltear. Añadir el tomate y cocinar hasta hacer salsa.</li>
+            <li>Hacer huecos, cascar los huevos, cocinar a fuego lento.</li>
+            <li>Decorar con hierbas y queso de cabra.</li>
+          </ol>
+          <p><strong>Servir:</strong> con pan de masa madre (sin levadura, sin azúcar).</p>
+        </div>
+        <div data-lang="ru">
+          <p>Тёплый завтрак из тушёных овощей со специями и яйцами.</p>
+          <span class="meta">Время: ~15–20 минут</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>2–3 яйца</li>
+            <li>1 помидор</li>
+            <li>½ красного перца</li>
+            <li>1–2 зубчика чеснока</li>
+            <li>масло для приготовления</li>
+            <li>соль, чёрный перец, кумин, паприка, кайенский перец</li>
+            <li>свежая зелень, козий сыр (по желанию)</li>
+          </ul>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Разогреть специи на сковороде с маслом.</li>
+            <li>Добавить перец, обжарить. Добавить помидор, тушить до соуса.</li>
+            <li>Сделать лунки, разбить яйца, готовить на малом огне.</li>
+            <li>Украсить зеленью и козьим сыром.</li>
+          </ol>
+          <p><strong>Подача:</strong> с хлебом на закваске (без дрожжей, без сахара).</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─── Category: Sauces ─────────────────────────── -->
+  <section class="recipe-cat" id="cat-sauces">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Sauces &amp; Extras</span>
+      <span data-lang="es">Salsas y complementos</span>
+      <span data-lang="ru">Соусы и добавки</span>
+    </h2>
+    <p class="recipe-cat-desc">
+      <span data-lang="en">Use these as additions to breakfasts, bowls, and vegetables.</span>
+      <span data-lang="es">Se pueden usar como complemento para desayunos, bowls y verduras.</span>
+      <span data-lang="ru">Эти блюда можно использовать как дополнение к завтракам, боулам и овощам.</span>
+    </p>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Homemade Hummus</span>
+          <span data-lang="es">Hummus casero</span>
+          <span data-lang="ru">Домашний хумус</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A thick paste of chickpeas and tahini.</p>
+          <span class="meta">Soak: overnight · Cook: ~1 hour</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Chickpeas, tahini, lemon, olive oil, cumin, salt, pepper</li>
+            <li>Optional: garlic, additional spices</li>
+          </ul>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Soak chickpeas overnight with baking soda; rinse in the morning.</li>
+            <li>Cook in a multicooker for ~1 hour (1.5–2 hours stovetop).</li>
+            <li>Transfer hot chickpeas to a blender. Add tahini, lemon, oil, spices.</li>
+            <li>Blend until smooth. For creamy texture, add ice water to the hot chickpeas.</li>
+          </ol>
+          <p><strong>Serving:</strong> with vegetables, waffles, in bowls. Don't pair with bread.</p>
+        </div>
+        <div data-lang="es">
+          <p>Una pasta espesa de garbanzos y tahini.</p>
+          <span class="meta">Remojo: toda la noche · Cocción: ~1 hora</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Garbanzos, tahini, limón, aceite de oliva, comino, sal, pimienta</li>
+            <li>Opcional: ajo, especias adicionales</li>
+          </ul>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Remojar garbanzos toda la noche con bicarbonato; enjuagar por la mañana.</li>
+            <li>Cocinar en olla programable ~1 hora (1,5–2 horas en olla normal).</li>
+            <li>Pasar garbanzos calientes a la licuadora. Añadir tahini, limón, aceite, especias.</li>
+            <li>Batir hasta que quede suave. Para textura cremosa, añadir agua helada a los garbanzos calientes.</li>
+          </ol>
+          <p><strong>Servir:</strong> con verduras, gofres, en bowls. No combinar con pan.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Густая паста из нута и тахини.</p>
+          <span class="meta">Замачивание: ночь · Варка: ~1 час</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>нут, тахини, лимон, оливковое масло, кумин, соль, перец</li>
+            <li>по желанию: чеснок, дополнительные специи</li>
+          </ul>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Нут замочить на ночь с содой; утром промыть.</li>
+            <li>Варить в мультиварке ~1 час (в кастрюле 1,5–2 часа).</li>
+            <li>Горячий нут переложить в блендер. Добавить тахини, лимон, масло, специи.</li>
+            <li>Взбить до однородности. Для кремовой текстуры — добавить ледяную воду к горячему нуту.</li>
+          </ol>
+          <p><strong>Подача:</strong> с овощами, вафлями, в боулах. Не сочетать с хлебом.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Dairy-Free Liver Pâté</span>
+          <span data-lang="es">Paté de hígado sin lácteos</span>
+          <span data-lang="ru">Печёночный паштет без молочных продуктов</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A very nutritious, simple pâté. Keeps for several days in the fridge.</p>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Liver (chicken or beef)</li>
+            <li>1 onion, 1 carrot</li>
+            <li>Coconut milk</li>
+            <li>Salt, pepper, ghee</li>
+          </ul>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Sauté the onion and carrot in ghee.</li>
+            <li>Liver: boil + lightly fry (mildest taste), or just boil, or fry directly.</li>
+            <li>Blend everything with coconut milk, salt, and pepper until thick.</li>
+            <li>Transfer to a glass container; let cool.</li>
+          </ol>
+          <p><strong>Serving:</strong> in breakfasts, bowls, with vegetables, waffles. Don't pair with bread.</p>
+        </div>
+        <div data-lang="es">
+          <p>Paté muy nutritivo y sencillo. Se conserva varios días en la nevera.</p>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Hígado (de pollo o res)</li>
+            <li>1 cebolla, 1 zanahoria</li>
+            <li>Leche de coco</li>
+            <li>Sal, pimienta, ghee</li>
+          </ul>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Saltear cebolla y zanahoria en ghee.</li>
+            <li>Hígado: hervir + freír ligeramente (sabor más suave), o solo hervir, o freír directamente.</li>
+            <li>Batir todo con leche de coco, sal y pimienta hasta consistencia espesa.</li>
+            <li>Pasar a recipiente de cristal; dejar enfriar.</li>
+          </ol>
+          <p><strong>Servir:</strong> en desayunos, bowls, con verduras, gofres. No combinar con pan.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Очень питательный и простой паштет. Хранится несколько дней в холодильнике.</p>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>печень (куриная или говяжья)</li>
+            <li>1 луковица, 1 морковь</li>
+            <li>кокосовое молоко</li>
+            <li>соль, перец, масло гхи</li>
+          </ul>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Обжарить лук и морковь на масле гхи.</li>
+            <li>Печень: отварить + слегка обжарить (самый мягкий вкус), или просто сварить, или обжарить.</li>
+            <li>Всё в блендер + кокосовое молоко, соль, перец. Взбить до густой массы.</li>
+            <li>Переложить в стеклянную ёмкость, остудить.</li>
+          </ol>
+          <p><strong>Подача:</strong> в завтраках, боулах, с овощами, вафлями. Не сочетать с хлебом.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Homemade Mayonnaise</span>
+          <span data-lang="es">Mayonesa casera</span>
+          <span data-lang="ru">Домашний майонез</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>Quick to make and far cleaner than store-bought.</p>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Olive oil, mustard, lemon juice, salt, pepper, egg yolk</li>
+          </ul>
+          <div class="warn">⚠ Use clean mustard — just mustard seeds.</div>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>In a blender: yolk, mustard, lemon juice, salt, pepper.</li>
+            <li>Blend, gradually adding olive oil until thick.</li>
+          </ol>
+          <p><strong>Boiled-egg variant:</strong> boil an egg, add to blender with all the ingredients, blend.</p>
+        </div>
+        <div data-lang="es">
+          <p>Se prepara muy rápido y es mucho más limpia que la comprada.</p>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Aceite de oliva, mostaza, zumo de limón, sal, pimienta, yema de huevo</li>
+          </ul>
+          <div class="warn">⚠ Usar mostaza con ingredientes limpios — solo semillas de mostaza.</div>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>En licuadora: yema, mostaza, zumo de limón, sal, pimienta.</li>
+            <li>Batir, añadiendo gradualmente aceite de oliva hasta espesar.</li>
+          </ol>
+          <p><strong>Opción con huevo cocido:</strong> cocer un huevo, añadir a la licuadora con todos los ingredientes, batir.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Готовится очень быстро и гораздо чище по составу, чем магазинный.</p>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>оливковое масло, горчица, сок лимона, соль, перец, желток яйца</li>
+          </ul>
+          <div class="warn">⚠ Горчица с чистым составом — только семена горчицы.</div>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>В блендер: желток, горчицу, сок лимона, соль, перец.</li>
+            <li>Взбивать, постепенно добавляя оливковое масло до густоты.</li>
+          </ol>
+          <p><strong>Вариант с варёным яйцом:</strong> сварить яйцо, добавить в блендер со всеми ингредиентами, взбить.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─── Category: Lunch ─────────────────────────── -->
+  <section class="recipe-cat" id="cat-lunch">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Lunch &amp; Light Dishes</span>
+      <span data-lang="es">Almuerzo y platos ligeros</span>
+      <span data-lang="ru">Ланч и лёгкие блюда</span>
+    </h2>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Quick Pumpkin Soup</span>
+          <span data-lang="es">Sopa rápida de calabaza</span>
+          <span data-lang="ru">Быстрый тыквенный суп</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A delicate cream soup, ready in 5–10 minutes from roasted pumpkin.</p>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Roasted pumpkin, coconut milk, bone broth</li>
+            <li>Salt, pepper, cinnamon (optional)</li>
+          </ul>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Pumpkin in a pot + coconut milk + broth.</li>
+            <li>Heat, add spices.</li>
+            <li>Blend until creamy.</li>
+          </ol>
+          <p class="tip">💡 Less liquid → purée. More liquid → cream soup.</p>
+          <p><strong>Serving:</strong> with pumpkin seeds, nuts, sautéed shrimp.</p>
+        </div>
+        <div data-lang="es">
+          <p>Una delicada crema de calabaza, lista en 5–10 minutos con calabaza asada.</p>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Calabaza asada, leche de coco, caldo de huesos</li>
+            <li>Sal, pimienta, canela (opcional)</li>
+          </ul>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Calabaza en olla + leche de coco + caldo.</li>
+            <li>Calentar, añadir especias.</li>
+            <li>Batir hasta textura cremosa.</li>
+          </ol>
+          <p class="tip">💡 Menos líquido → puré. Más líquido → crema.</p>
+          <p><strong>Servir:</strong> con semillas de calabaza, frutos secos, gambas salteadas.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Нежный крем-суп, готовится за 5–10 минут из запечённой тыквы.</p>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>запечённая тыква, кокосовое молоко, костный бульон</li>
+            <li>соль, перец, корица (по желанию)</li>
+          </ul>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Тыкву в кастрюлю + кокосовое молоко + бульон.</li>
+            <li>Разогреть, добавить специи.</li>
+            <li>Взбить блендером до кремовой текстуры.</li>
+          </ol>
+          <p class="tip">💡 Меньше жидкости → пюре. Больше → крем-суп.</p>
+          <p><strong>Подача:</strong> с тыквенными семечками, орехами, обжаренными креветками.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Roasted Beet Salad with Greens and Goat Cheese</span>
+          <span data-lang="es">Ensalada de remolacha asada con hojas verdes y queso de cabra</span>
+          <span data-lang="ru">Салат из запечённой свёклы с зеленью и козьим сыром</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A simple, tasty salad.</p>
+          <span class="meta">Time: ~10 min (if beets are ready)</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Beets (roasted, or from a multicooker)</li>
+            <li>Spinach, arugula</li>
+            <li>Nuts or seeds (walnuts, hazelnuts, pumpkin)</li>
+            <li>Goat cheese</li>
+            <li>Avocado (optional)</li>
+          </ul>
+          <p><strong>Dressing:</strong> olive oil, salt, pepper, balsamic vinegar (sugar-free).</p>
+          <p><strong>Assembly:</strong> Slice beets, add greens, nuts, goat cheese, dress.</p>
+        </div>
+        <div data-lang="es">
+          <p>Una ensalada sencilla y sabrosa.</p>
+          <span class="meta">Tiempo: ~10 min (si la remolacha está lista)</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Remolacha (asada o de olla programable)</li>
+            <li>Espinacas, rúcula</li>
+            <li>Frutos secos o semillas (nueces, avellanas, calabaza)</li>
+            <li>Queso de cabra</li>
+            <li>Aguacate (opcional)</li>
+          </ul>
+          <p><strong>Aliño:</strong> aceite de oliva, sal, pimienta, vinagre balsámico (sin azúcar).</p>
+          <p><strong>Montaje:</strong> Cortar remolacha, añadir hojas verdes, frutos secos, queso de cabra, aliñar.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Простой и вкусный салат.</p>
+          <span class="meta">Время: ~10 минут (если свёкла готова)</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>свёкла (запечённая или из мультиварки)</li>
+            <li>шпинат, рукола</li>
+            <li>орехи или семечки (грецкие, фундук, тыквенные)</li>
+            <li>козий сыр</li>
+            <li>авокадо (по желанию)</li>
+          </ul>
+          <p><strong>Заправка:</strong> оливковое масло, соль, перец, бальзамический уксус (без сахара).</p>
+          <p><strong>Сборка:</strong> Нарезать свёклу, добавить зелень, орехи, козий сыр, заправить.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─── Category: Sides ─────────────────────────── -->
+  <section class="recipe-cat" id="cat-sides">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Side Dishes</span>
+      <span data-lang="es">Guarniciones</span>
+      <span data-lang="ru">Гарниры</span>
+    </h2>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Red Cabbage and Carrot Coleslaw</span>
+          <span data-lang="es">Ensalada de col morada y zanahoria</span>
+          <span data-lang="ru">Колслоу из красной капусты и моркови</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A simple, fresh side salad for meat or fish.</p>
+          <span class="meta">Time: ~10 min</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Red cabbage (finely shredded)</li>
+            <li>Carrot (grated)</li>
+            <li>Beet (optional)</li>
+            <li>Homemade mayonnaise</li>
+          </ul>
+          <p>Mix all vegetables in a bowl and dress with homemade mayo.</p>
+        </div>
+        <div data-lang="es">
+          <p>Una ensalada fresca y sencilla para acompañar carne o pescado.</p>
+          <span class="meta">Tiempo: ~10 min</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Col morada (finamente picada)</li>
+            <li>Zanahoria (rallada)</li>
+            <li>Remolacha (opcional)</li>
+            <li>Mayonesa casera</li>
+          </ul>
+          <p>Mezclar todas las verduras en un bol y aliñar con mayonesa casera.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Простой свежий салат-гарнир к мясу или рыбе.</p>
+          <span class="meta">Время: ~10 минут</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>красная капуста (мелко нашинковать)</li>
+            <li>морковь (натереть)</li>
+            <li>свёкла (по желанию)</li>
+            <li>домашний майонез</li>
+          </ul>
+          <p>Все овощи перемешать в миске и заправить домашним майонезом.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Roasted Vegetables</span>
+          <span data-lang="es">Verduras asadas</span>
+          <span data-lang="ru">Запечённые овощи</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>One of the simplest, healthiest side dishes — air fryer or oven.</p>
+          <p><strong>Basic principle:</strong> vegetables + olive oil + spices → air fryer or oven.</p>
+          <p><strong>Options:</strong></p>
+          <ul>
+            <li><strong>Sweet potato</strong> — cut into strips with oil, salt, pepper, cayenne. Air fryer 180°C, ~20 min.</li>
+            <li><strong>Pumpkin</strong> — cubed with oil + spices. Air fryer ~20 min, or oven ~40 min.</li>
+            <li><strong>Asparagus</strong> — snap off tough ends, mix with oil, garlic, salt. Air fryer ~4 min.</li>
+            <li><strong>Green beans</strong> — trim ends, cut 3–4 cm, oil + spices, until tender.</li>
+            <li><strong>Pepper, zucchini, carrot</strong> — chop and roast with oil and spices.</li>
+            <li><strong>Brussels sprouts</strong> — halve, boil 10 min, then roast with oil, salt, pepper, garlic.</li>
+            <li><strong>Cauliflower</strong> — break into florets, boil 15 min, then fry or roast.</li>
+          </ul>
+        </div>
+        <div data-lang="es">
+          <p>Una de las guarniciones más sencillas y saludables — freidora de aire u horno.</p>
+          <p><strong>Principio básico:</strong> verduras + aceite de oliva + especias → freidora de aire u horno.</p>
+          <p><strong>Opciones:</strong></p>
+          <ul>
+            <li><strong>Boniato</strong> — cortar en bastones con aceite, sal, pimienta, cayena. Freidora de aire 180°C, ~20 min.</li>
+            <li><strong>Calabaza</strong> — en cubos con aceite + especias. Freidora ~20 min u horno ~40 min.</li>
+            <li><strong>Espárragos</strong> — romper la parte dura, mezclar con aceite, ajo, sal. Freidora ~4 min.</li>
+            <li><strong>Judías verdes</strong> — cortar puntas, trocear 3–4 cm, aceite + especias, hasta que estén tiernas.</li>
+            <li><strong>Pimiento, calabacín, zanahoria</strong> — trocear y asar con aceite y especias.</li>
+            <li><strong>Coles de Bruselas</strong> — cortar por la mitad, hervir 10 min, luego asar con aceite, sal, pimienta, ajo.</li>
+            <li><strong>Coliflor</strong> — separar en ramilletes, hervir 15 min, luego freír o asar.</li>
+          </ul>
+        </div>
+        <div data-lang="ru">
+          <p>Один из самых простых и полезных гарниров — аэрогриль или духовка.</p>
+          <p><strong>Базовый принцип:</strong> овощи + оливковое масло + специи → аэрогриль или духовка.</p>
+          <p><strong>Варианты:</strong></p>
+          <ul>
+            <li><strong>Батат</strong> — нарезать соломкой с маслом, солью, перцем, кайенским перцем. Аэрогриль 180°C, ~20 мин.</li>
+            <li><strong>Тыква</strong> — кубиками с маслом + специи. Аэрогриль ~20 мин или духовка ~40 мин.</li>
+            <li><strong>Спаржа</strong> — отломить жёсткую часть, смешать с маслом, чесноком, солью. Аэрогриль ~4 мин.</li>
+            <li><strong>Зелёная фасоль</strong> — отрезать кончики, нарезать по 3–4 см, масло + специи, до мягкости.</li>
+            <li><strong>Перец, кабачок, морковь</strong> — нарезать и запечь с маслом и специями.</li>
+            <li><strong>Брюссельская капуста</strong> — разрезать пополам, отварить 10 мин, затем запечь с маслом, солью, перцем, чесноком.</li>
+            <li><strong>Цветная капуста</strong> — разобрать на соцветия, отварить 15 мин, затем обжарить или запечь.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─── Category: Mains ─────────────────────────── -->
+  <section class="recipe-cat" id="cat-mains">
+    <h2 class="recipe-cat-head">
+      <span data-lang="en">Main Courses</span>
+      <span data-lang="es">Platos principales</span>
+      <span data-lang="ru">Основные блюда</span>
+    </h2>
+
+    <details class="recipe">
+      <summary>
+        <span>
+          <span data-lang="en">Salmon and Broccoli Pasta</span>
+          <span data-lang="es">Pasta con salmón y brócoli</span>
+          <span data-lang="ru">Паста с лососем и брокколи</span>
+        </span>
+        <span class="icon">+</span>
+      </summary>
+      <div class="recipe-body">
+        <div data-lang="en">
+          <p>A very quick and delicious recipe.</p>
+          <span class="meta">Time: 10–15 min</span>
+          <p><strong>Ingredients:</strong></p>
+          <ul>
+            <li>Green buckwheat pasta (or quinoa, amaranth)</li>
+            <li>Salmon fillet</li>
+            <li>Broccoli</li>
+            <li>Coconut milk</li>
+            <li>Soft goat cheese</li>
+            <li>Salt, black pepper, cayenne</li>
+            <li>Ghee</li>
+          </ul>
+          <p><strong>Method:</strong></p>
+          <ol>
+            <li>Cook the pasta al dente.</li>
+            <li>Dice the salmon, sear in ghee until golden.</li>
+            <li>Add broccoli florets, cook a few minutes.</li>
+            <li>Add coconut milk, goat cheese, spices — stir into a sauce.</li>
+            <li>Toss the pasta through.</li>
+          </ol>
+          <p><strong>Without pasta:</strong> salmon + broccoli + sauce with a light salad.</p>
+          <p class="tip">💡 Principle: fiber + healthy fats + protein / slow carbs.</p>
+        </div>
+        <div data-lang="es">
+          <p>Una receta muy rápida y deliciosa.</p>
+          <span class="meta">Tiempo: 10–15 min</span>
+          <p><strong>Ingredientes:</strong></p>
+          <ul>
+            <li>Pasta de trigo sarraceno verde (o quinoa, amaranto)</li>
+            <li>Filete de salmón</li>
+            <li>Brócoli</li>
+            <li>Leche de coco</li>
+            <li>Queso de cabra suave</li>
+            <li>Sal, pimienta negra, cayena</li>
+            <li>Ghee</li>
+          </ul>
+          <p><strong>Preparación:</strong></p>
+          <ol>
+            <li>Cocinar la pasta al dente.</li>
+            <li>Cortar el salmón en cubos, sellar en ghee hasta dorar.</li>
+            <li>Añadir ramilletes de brócoli, cocinar unos minutos.</li>
+            <li>Añadir leche de coco, queso de cabra, especias — mezclar en salsa.</li>
+            <li>Añadir la pasta, mezclar todo.</li>
+          </ol>
+          <p><strong>Sin pasta:</strong> salmón + brócoli + salsa con ensalada ligera.</p>
+          <p class="tip">💡 Principio: fibra + grasas saludables + proteína / carbohidratos lentos.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Очень быстрый и вкусный рецепт.</p>
+          <span class="meta">Время: 10–15 минут</span>
+          <p><strong>Ингредиенты:</strong></p>
+          <ul>
+            <li>паста из зелёной гречки (или киноа, амаранта)</li>
+            <li>филе лосося</li>
+            <li>брокколи</li>
+            <li>кокосовое молоко</li>
+            <li>мягкий козий сыр</li>
+            <li>соль, чёрный перец, кайенский перец</li>
+            <li>масло гхи</li>
+          </ul>
+          <p><strong>Приготовление:</strong></p>
+          <ol>
+            <li>Отварить пасту аль денте.</li>
+            <li>Лосось нарезать кубиками, обжарить на гхи до корочки.</li>
+            <li>Добавить соцветия брокколи, готовить несколько минут.</li>
+            <li>Добавить кокосовое молоко, козий сыр, специи — перемешать в соус.</li>
+            <li>Добавить пасту, перемешать.</li>
+          </ol>
+          <p><strong>Вариант без пасты:</strong> лосось + брокколи + соус с лёгким салатом.</p>
+          <p class="tip">💡 Принцип: клетчатка + полезные жиры + протеин / длинные углеводы.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <div class="mt-40" style="display:flex; gap:16px; flex-wrap:wrap;">
+    <a href="practices.html" class="btn btn-outline">← Practices Overview</a>
+  </div>
+</div>
+
+<footer><div class="container"><p>© Jane Novikova · <a href="../index.html">Home</a> · <a href="about.html">About &amp; References</a></p></div></footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
